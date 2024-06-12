@@ -1,0 +1,175 @@
+@import "mixin";
+
+.company__inner {
+  width: 100%;
+  background-color: $bg-fon;
+  min-height: 100vh;
+  padding: 0 0 5px 0;
+
+}
+
+.item__inner {
+  transform: translateY(45px);
+  margin: auto;
+  display: flex;
+  width: 320px;
+
+  @include center;
+  min-height: 100dvh;
+
+  & h3 {
+    color: $text2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 35px;
+
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  gap: 15px;
+}
+
+.square__item {
+  border: 1px solid rgb(182, 255, 186);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 0 10px 0 rgb(182, 255, 186);
+  background: rgba(0, 0, 0, 0.7);
+  width: 80px;
+  height: 70px;
+  margin: auto;
+  @include center;
+
+  & span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    color: $color-span;
+
+  }
+
+}
+
+.item__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 80%;
+  margin: 10px auto;
+  color: $text;
+
+}
+
+.division {
+  margin-top: 43px;
+   h3 {
+    display: flex;
+    justify-content: flex-start;
+    color: $text2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 43px 0 35px 5px;
+  }
+}
+
+.menu {
+  width: 340px;
+  margin: auto;
+
+  .ul_list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .li_item {
+    border: 2px solid $text2;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $text;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: max-content;
+    white-space: nowrap;
+    padding: 0 16px 0 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $text2;
+      color: $bg-fon;
+      border: 2px solid $text2;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  margin: 35px auto auto auto;
+  border: 3px solid $text2;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.card_text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  &:nth-child(1) {
+    color: $text;
+  }
+
+  color: $color-span;
+}
+
+
+.more_btn {
+  border: 0;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-span;
+  position: absolute;
+  left: 270px;
+  top: 70px;
+
+  & img {
+
+  }
+}
+
+.btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 35px 0 55px 0;
+}
+
+.coll_btn {
+  width: 270px;
+  background-color: $accent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $text;
+  padding: 10px 36px 10px 36px;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+}

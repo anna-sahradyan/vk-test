@@ -1,0 +1,208 @@
+.advantages__inner {
+  width: 100%;
+  min-height: 100vh;
+  //margin-bottom: 50px;
+  margin-top: 30px;
+
+  & h3 {
+    margin: 45px 0 36.5px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.advantages__menu {
+  width:100%;
+  margin: auto;
+
+  & span {
+    color: $text;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    width: 280px;
+  }
+
+}
+
+.advantages_list {
+  display: flex;
+  flex-direction: column;
+
+  hr{
+    border-bottom: 2.5px solid $text2;
+  }
+}
+
+.advantages_li {
+  margin: auto;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: $text;
+
+
+}
+
+.adv_btn {
+  border: 0;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-span;
+
+  & img {
+
+  }
+}
+
+/*PRODUCTS PART*/
+.products__inner {
+  background-color: $bg-fon;
+  margin-top: 35px;
+ padding:10px 0 20px 0;
+  .title_box {
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      color: $text2;
+      text-transform: uppercase;
+
+    }
+  }
+}
+.prod__btn {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 5px;
+
+  button {
+    width: 108px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    background-color: inherit;
+    color: $text2;
+    border: 2px solid $text2;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+
+
+    &:hover {
+      color: $bg-fon;
+      background-color: $text2;
+      cursor: pointer;
+    }
+  }
+}
+
+
+/*SLIDER PART*/
+.slider {
+  margin-top: 30px;
+}
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.slide__box {
+  margin: 35px 0 45px 0;
+}
+
+.top-slider__title {
+  margin: auto;
+  width: 165px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 5px rgba(217, 217, 217, 0.25);
+  background: rgb(217, 217, 217);
+
+}
+
+.custom-dot {
+  width: 15px;
+  height: 15px;
+  background-color: $text2;
+  border-radius: 50%;
+
+}
+
+.slick-active .custom-dot {
+  width: 42px;
+  height: 15px;
+  background-color: $text2;
+  border-radius: 25px;
+
+}
+/*ARROWS*/
+.custom-arrow {
+  position: absolute;
+  display: flex;
+  width: 70px;
+  height: 148px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(270.00deg, rgba(0, 0, 0, 0) 6.073%, rgba(0, 0, 0, 0.7) 99.892%), rgb(217, 217, 217);
+  cursor: pointer;
+  button {
+    outline: none;
+    border: 0;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.prev {
+  transform: rotate(180deg);
+}
+
+.prev,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.arrow_container{
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+.box_btn-prev {
+  right: -10px;
+  top: -100px;
+  transform: translateY(-45%);
+}
+
+.box_btn-next {
+ left: -10px;
+  top: 100px;
+  transform: translateY(-55%);
+
+}
+
