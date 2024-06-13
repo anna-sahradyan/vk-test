@@ -1,7 +1,6 @@
 .advantages__inner {
   width: 100%;
   min-height: 100vh;
-  //margin-bottom: 50px;
   margin-top: 30px;
 
   & h3 {
@@ -105,8 +104,6 @@
     line-height: 30px;
     display: flex;
     justify-content: center;
-
-
     &:hover {
       color: $bg-fon;
       background-color: $text2;

@@ -1,0 +1,138 @@
+.footer_inner {
+  padding-bottom: 20px;
+}
+
+.footer_title {
+  h3 {
+    margin: 45px 0 36.5px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__btn {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 10px;
+
+  button {
+    text-transform: uppercase;
+    width: 180px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    background-color: inherit;
+    color: $text2;
+    border: 2px solid $text2;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      color: $bg-fon;
+      background-color: $text2;
+      cursor: pointer;
+    }
+  }
+}
+
+/*Coll part */
+
+.footer_contact_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: 40px auto;
+  height: 146px;
+}
+
+.footer_contact_inner {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: $text;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*footer social*/
+.footer_social {
+  width: 210px;
+  margin: 46px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+.footer_map {
+  width: 100%;
+}
+
+.footer_bottom {
+  width: 254px;
+  margin: 42px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.copy_right {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $text;
+  margin-bottom: 30px;
+
+}
+
+.footer_link {
+  display: flex;
+  flex-direction: column;
+  width: 194px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $text;
+  margin-bottom: 16px;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.alpha {
+
+}

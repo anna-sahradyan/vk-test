@@ -1,8 +1,12 @@
 import React from 'react';
 import SlideProd from "./SlideProd";
+import CareerSlide from "./CareerSlide";
 
 const Advantages = () => {
+
     return (
+        <>
+
         <div className={'advantages__inner'}>
             <div className={"title_box"}><h3>Преимущества Компании</h3></div>
 
@@ -25,7 +29,7 @@ const Advantages = () => {
                         <button className={'adv_btn'}><img src="/img/more.svg" alt=""/></button>
                     </li>
                     <hr/>
-                    <li className="advantages_li"><span>Свои автоматизированные системы обучения</span>
+                    <li className="advantages_li"><span>Сотрудничество с ведущими Компаниями рынка</span>
                         <button className={'adv_btn'}><img src="/img/more.svg" alt=""/></button>
                     </li>
                     <hr/>
@@ -40,9 +44,13 @@ const Advantages = () => {
                 <div className="slide__box">
                     <SlideProd/>
                 </div>
-
+            </div>
+            <div className="career_slide_box">
+                <CareerSlide/>
             </div>
         </div>
+
+            </>
     );
 };
 

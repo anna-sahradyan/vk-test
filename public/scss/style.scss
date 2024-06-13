@@ -3,6 +3,10 @@
 @import "company";
 @import "mixin";
 @import "advantages";
+@import "career";
+@import "success";
+@import "footer";
+@import "form";
 @font-face {
   font-family: "Gotham Pro";
   font-weight: 400;
@@ -227,8 +231,6 @@ select {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   min-height: 100%;
 }
 
@@ -265,7 +267,6 @@ body {
 }
 
 .wrapper {
-  border: 1px solid blue;
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;

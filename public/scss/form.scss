@@ -1,0 +1,264 @@
+.form__inner {
+  background-color: $bg-fon;
+
+}
+
+.form__header {
+  width: 350px;
+  margin: auto;
+  height: 50px;
+  background-color: $bg;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .img_close {
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.title_box {
+  margin-top: 20px;
+  margin-bottom: 37px;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text2;
+  }
+
+}
+
+.form__part {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: auto;
+}
+
+.input_part {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: auto;
+
+  & input {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 3px solid $text2;
+    padding: 15px 10px 15px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text2;
+  }
+}
+
+.select_part {
+  margin-bottom: 20px;
+
+  & select {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 3px solid $text2;
+    padding: 15px 10px 15px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text2;
+
+  }
+}
+
+.sub_title_box {
+  margin-top: 20px;
+  display: flex;
+  text-align: left;
+  margin-left: 10px;
+
+  & h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text;
+
+  }
+
+}
+
+.text__part {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 15px 0 15px 10px;
+
+  & p {
+    font-size: 10px;
+    color: $text2;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+
+  }
+}
+
+.upload__file {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 45px;
+
+  & button {
+    width: 184px;
+    background-color: $color-span;
+    color: $text;
+    padding: 10px 36px 10px 36px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+
+}
+
+.text__agree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+
+  & span {
+    color: $text2;
+    margin-bottom: 10px;
+  }
+}
+
+.check_bottom_span {
+  & span {
+    color: $text2;
+    margin-left: 15px;
+
+  }
+}
+
+.check_box {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+
+  & input {
+    border: 0;
+    outline: none;
+    background-color: $text2;
+  }
+}
+
+.send__button {
+  margin: 80px 0 46px 0;
+
+  & button {
+    border: 0;
+    outline: none;
+    width: 200px;
+    background-color: $accent;
+    color: $text;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 10px 36px 9px 36px;
+  }
+}
+
+/*SENDFORM PART*/
+.close_icon_send{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.send__inner {
+  background-color: $bg-fon;
+  padding-bottom: 50px;
+}
+
+.send__title {
+  margin: 20px 0 74px 0;
+
+  & h3 {
+    color: $text2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+}
+
+.send_success {
+  margin: 45px auto;
+  width: 240px;
+
+}
+
+.send__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $text;
+    margin: 5px;
+  }
+}
+
+.hidden_send_form {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.home__btn {
+  & button {
+    width: 156px;
+    border: 0;
+    outline: none;
+    background-color: $accent;
+    color: $text;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 10px 36px 9px 36px;
+  }
+}

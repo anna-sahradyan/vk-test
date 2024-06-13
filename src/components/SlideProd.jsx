@@ -36,6 +36,8 @@ const SlideProd = () => {
 
 
     return (
+        <>
+        <div className="wrapper">
         <div className={'slider'}>
             <Slider {...settings}>
                 {dataProd.map((item, index) => (
@@ -47,6 +49,8 @@ const SlideProd = () => {
             </Slider>
 
         </div>
+        </div>
+        </>
     );
 };
 const CustomNextArrow = (props) => (

@@ -34,6 +34,7 @@
   text-align: center;
   align-content: center;
   gap: 15px;
+
 }
 
 .square__item {
@@ -68,7 +69,7 @@
 
 .division {
   margin-top: 43px;
-   h3 {
+  h3 {
     display: flex;
     justify-content: flex-start;
     color: $text2;
@@ -76,6 +77,9 @@
     font-weight: 700;
     line-height: 22px;
     margin: 43px 0 35px 5px;
+    @media screen and (min-width: 360px) and (max-width: 991px){
+    justify-content: center;
+    }
   }
 }
 
@@ -128,6 +132,7 @@
   flex-direction: row;
   gap: 10px;
   margin-bottom: 10px;
+
   &:nth-child(1) {
     color: $text;
   }
@@ -172,4 +177,47 @@
   border-radius: 30px;
   border: 0;
   outline: none;
+}
+
+/*HIDDEN CARD*/
+
+.hidden__card {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.close_btn {
+  border: 0;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-span;
+  position: absolute;
+  left: 270px;
+  top: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.employees_box {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: $text;
+
+}
+.list_title{
+  margin-bottom: 10px;
+}
+.list_item{
+  list-style-type:disc;
+  margin-left: 20px;
+  margin-bottom: 8px;
 }
