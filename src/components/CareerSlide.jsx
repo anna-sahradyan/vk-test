@@ -20,49 +20,51 @@ const CareerSlide = () => {
     ],
   };
 
-    return (
-        <>
-            <div className="wrapper">
-                <div className={"career_inner"}>
-                    <div className="career_title_box">
-                        <h3>Карьерный рост</h3>
-                        <div className="text_box">
-                            <p>Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются
-                                по карьерной лестнице.
-                                Мы ценим стремление к развитию и предоставляем все необходимые для этого условия.</p>
-                            <p>Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются
-                                по карьерной лестнице. Мы ценим стремление к развитию и предоставляем все необходимые
-                                для этого условия</p>
-                        </div>
-                    </div>
-                    <Slider {...settings}>
-                        {careerData.map((item, index) => (
-                            <div key={item.id} className={"career_slide_innerBox"}>
-                                <div className="img_box">
-                                    <img src={item.imgSrc} alt={item.name}/>
-                                </div>
-                                <div className="career_name">
-                                    <span>{item.name}</span>
-                                </div>
-                                <div className="pro_text">
-                                    {item.pro}
-                                </div>
-                                <div className="career_text_box">
-                                    <ul className={"career_list"}>
-                                        <li className="career_li">{item.textOne}</li>
-                                        <li className="career_li">{item.textTwo}</li>
-                                        <li className="career_li">{item.textThree}</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
+  return (
+    <>
+      <div className='wrapper'>
+        <div className={'career_inner'}>
+          <div className='career_title_box'>
+            <h3>Карьерный рост</h3>
+            <div className='text_box'>
+              <p>
+                Наша Компания является ярким примером, где достойные люди смело
+                и заслуженно поднимаются по карьерной лестнице. Мы ценим
+                стремление к развитию и предоставляем все необходимые для этого
+                условия.
+              </p>
+              <p>
+                Наша Компания является ярким примером, где достойные люди смело
+                и заслуженно поднимаются по карьерной лестнице. Мы ценим
+                стремление к развитию и предоставляем все необходимые для этого
+                условия
+              </p>
             </div>
-        </>
-    );
-
+          </div>
+          <Slider {...settings}>
+            {careerData.map((item, index) => (
+              <div key={item.id} className={'career_slide_innerBox'}>
+                <div className='img_box'>
+                  <img src={item.imgSrc} alt={item.name} />
+                </div>
+                <div className='career_name'>
+                  <span>{item.name}</span>
+                </div>
+                <div className='pro_text'>{item.pro}</div>
+                <div className='career_text_box'>
+                  <ul className={'career_list'}>
+                    <li className='career_li'>{item.textOne}</li>
+                    <li className='career_li'>{item.textTwo}</li>
+                    <li className='career_li'>{item.textThree}</li>
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </>
+  );
 };
 
 const CustomNextArrow = props => (
