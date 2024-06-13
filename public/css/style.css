@@ -482,6 +482,7 @@
 }
 
 .custom-dot {
+  margin-top: 20px;
   width: 15px;
   height: 15px;
   background-color: #999999;
@@ -576,6 +577,7 @@
 }
 
 .career_inner {
+  margin-top: -250px;
   max-width: 100%;
   overflow: hidden;
   padding-bottom: 50px;

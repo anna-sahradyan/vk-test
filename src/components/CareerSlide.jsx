@@ -1,24 +1,24 @@
 import React from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import {careerData} from "../data/careerData";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { careerData } from '../data/careerData';
 
 const CareerSlide = () => {
-    var settings = {
-        dots: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        qcustomPaging: () => <ul className="custom-dot"></ul>,
-        prevArrow: <CustomPrevArrow/>,
-        nextArrow: <CustomNextArrow/>,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {},
-            },
-        ],
-    };
+  var settings = {
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    qcustomPaging: () => <ul className='custom-dot'></ul>,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {},
+      },
+    ],
+  };
 
     return (
         <>
@@ -65,25 +65,30 @@ const CareerSlide = () => {
 
 };
 
-const CustomNextArrow = (props) => (
-    <>
-        <div className="career_slide box_next">
-            <button className="career_custom-arrow career_next" onClick={props.onClick}>
-                <img src={"/img/arrow.svg"} alt="next" className={"careerImg"}/>
-            </button>
-        </div>
-    </>
+const CustomNextArrow = props => (
+  <>
+    <div className='career_slide box_next'>
+      <button
+        className='career_custom-arrow career_next'
+        onClick={props.onClick}
+      >
+        <img src={'/img/arrow.svg'} alt='next' className={'careerImg'} />
+      </button>
+    </div>
+  </>
 );
 
-const CustomPrevArrow = (props) => (
-    <>
-        <div className="career_slide box_prev">
-            <button className="career_custom-arrow career_prev" onClick={props.onClick}>
-                <img src="/img/arrow.svg" alt="prev" className={"careerImg"}/>
-            </button>
-        </div>
-
-    </>
+const CustomPrevArrow = props => (
+  <>
+    <div className='career_slide box_prev'>
+      <button
+        className='career_custom-arrow career_prev'
+        onClick={props.onClick}
+      >
+        <img src='/img/arrow.svg' alt='prev' className={'careerImg'} />
+      </button>
+    </div>
+  </>
 );
 
 export default CareerSlide;
